@@ -1,0 +1,94 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?fit=crop&w=1350&q=80') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.hero .links a {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.hero .links a:hover {
+  color: #00d4ff;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 50px;
+}
+h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+  border-left: 5px solid #00d4ff;
+  padding-left: 10px;
+}
+
+/* Project Cards */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.card h3 {
+  margin-top: 0;
+  color: #00d4ff;
+}
+.card p {
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+}
